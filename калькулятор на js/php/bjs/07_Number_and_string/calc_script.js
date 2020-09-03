@@ -35,9 +35,7 @@ document.getElementById('btn_9').addEventListener('click', function () {
 document.getElementById('btn_0').addEventListener('click', function () {
     inputWindow.value += '0';
 })
-document.getElementById('btn_def').addEventListener('click', function () {
-    lastOperand = '-';
-})
+
 
 
 // цифры 
@@ -62,7 +60,7 @@ document.getElementById('btn_def').addEventListener('click', function () {
 })
 // разница
 
-// унарный минус
+
 
 // деление
 document.getElementById('btn_div').addEventListener('click', function () {
@@ -126,7 +124,7 @@ document.getElementById('btn_calc').addEventListener('click', function () {
         inputWindow.value = result;
     }
     if (operation === 'sqrt') {
-        const result = Math.sqrt(lastOperand);
+        const result = Math.sqrt(inputWindow.value);
         operation = null;
         lastOperand = 0;
         inputWindow.value = result;
