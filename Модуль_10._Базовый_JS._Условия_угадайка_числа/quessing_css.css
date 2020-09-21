@@ -1,0 +1,40 @@
+
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+
+.card-header {
+    background-color: rgba(232, 251, 251, 0.863);
+}
+
+
+#btnRetry {
+    background-color: rgb(255, 0, 0); 
+} 
+
+.card-body {
+    background-color: rgb(190, 228, 250);
+}
+
+
+.card-footer {
+    background-color: rgb(245, 99, 99);
+}
+#btnRetry {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    background: rgb(255, 255, 255); /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+    transition: 0.2s linear; /* Время изменения */
+   }
+   #btnRetry:hover {
+    color: rgb(255, 255, 255); /* Цвет текста */
+    background: rgb(236, 119, 119); /* Цвет фона */
+   }
+
+
+   
+body {
+    background-color: rgb(225, 230, 246);
+}

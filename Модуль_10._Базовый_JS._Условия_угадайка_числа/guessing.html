@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="quessing_css.css" type="text/css"/>
+</head>
+<body>
+    <header>
+
+          
+</header>
+
+
+   
+<div class="container">
+   
+    <div class="row game-card align-items-center">
+        <div class="col col-md-4 offset-md-4">
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group">
+                        <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
+                        <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+                        <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-outline-danger" id="btnRetry">заново</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="quessing_js.js"></script>
+
+
+</body>
+</html>
