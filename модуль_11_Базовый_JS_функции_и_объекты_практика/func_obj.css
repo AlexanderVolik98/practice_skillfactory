@@ -1,0 +1,14 @@
+.card-body {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+.card-header {
+    background-color: rgba(232, 251, 251, 0.863);
+}
+
+body {
+    background-color: skyblue;
+}
+
+
+
