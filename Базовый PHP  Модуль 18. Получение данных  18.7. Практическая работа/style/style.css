@@ -1,0 +1,64 @@
+
+p{
+    font-size: medium;
+    color: brown;
+    }
+
+h2 {
+    text-align: center;
+    color:brown;
+}
+
+h1  {
+    color: brown;
+}
+
+body {
+    background-color: rgb(160, 159, 159);
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+
+.page {
+
+overflow: hidden;
+display: flex;
+flex-direction: column;
+min-height: 90vh;
+
+
+}
+
+nav {
+    background-color: black;
+}
+
+
+.nav-link {
+    color: brown;
+}
+
+form {
+    padding-bottom: 30px;
+}
+
+
+.page {
+    padding-bottom: 10%;
+}
+
+
+
+.footer{
+    background-color:white;
+    width: 30%;
+    margin-top: 30px;
+    color: teal;
+}
+
+
+#cont {
+    padding-bottom: 10px;
+}
+
+
