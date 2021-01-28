@@ -10,17 +10,13 @@
 <?php
 
 
-
-
 class family{
+   
     public $peoplecount = 3;
-  
-
-
+    
     function getInfo() {
         return "семья состоит из {$this->peoplecount} человек";
     }
-
 }
 
 
@@ -31,14 +27,12 @@ echo $familyOne->getInfo();
 var_dump($familyOne);
 
 
-
 abstract class members extends family{
 
 protected $surname = "Ивановых";
 protected $city = "Москва";
 protected $district = "Павелецкая 23к4 кв. 173";
 protected $character = "спокойный";
-
 
     abstract public function get_info();
     abstract public function rest();
@@ -47,21 +41,7 @@ protected $character = "спокойный";
         $this->name = "zzz...";
         echo $this->name;    
     }
-    
-
-    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 class father extends members  {
@@ -76,12 +56,10 @@ class father extends members  {
     
     }
 
-
     public function work () {
         $this->name = "working";
         echo $this->name;
     }
-
 
     public function rest () {
         $this->name = "watching TV";
@@ -92,7 +70,6 @@ class father extends members  {
         return "мужчине "."{$this->age}" ."лет, "."его зовут ". "{$this->name} " . "он из семьи {$this->surname}" ." профессия "."{$this->profession}" . " проживает в городе " . 
         "{$this->city}"." по адресу {$this->district}";
     }
-
 }
 
 
@@ -101,15 +78,6 @@ $man = new father("26 "," Алексей"," инженер");
 echo $man->get_info();
 
 var_dump($man);
-
-
-
-
-
-
-
-
-
 
 
 class mother extends members {
@@ -124,7 +92,6 @@ class mother extends members {
   
     }
 
-
     public function rest () {
         $this->name = "reading books";
         echo $this->name;
@@ -134,16 +101,12 @@ class mother extends members {
         $this->name = "working";
         echo $this->name;
     }
-  
+
     public function get_info() {
         return "женщине "."{$this->age}" ."лет, "."ее зовут ". "{$this->name} она из семьи {$this->surname}" ." профессия "."{$this->profession}" . " проживает в городе" . 
         " {$this->city}"." по адресу {$this->district}";
     }
-
-
-
 }
-
 
 
 $women = new mother("25 "," Елена"," менеджер");
@@ -151,12 +114,6 @@ $women = new mother("25 "," Елена"," менеджер");
 echo $women->get_info();
 
 var_dump($women);
-
-
-
-
-
-
 
 
 class child extends members {
@@ -179,16 +136,10 @@ class child extends members {
         echo $this->name;
     }
 
-
-
     public function get_info() {
         return "{$this->sex} "."{$this->age} " ."лет, "." зовут ". "{$this->name} " . "из семьи {$this->surname}" .", учится в "."{$this->place_of_study}" . ", проживает в городе " . 
         " {$this->city}"." по адресу {$this->district} характер как и у родителей - {$this->character}";
     }
-
-
-
-
 }
 
 
@@ -198,13 +149,8 @@ echo $newchild->get_info();
 
 
 var_dump($newchild);
-
-
-
-
-
+    
 ?>
-
 
 
 </body> 
