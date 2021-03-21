@@ -1,0 +1,271 @@
+
+/*
+default */
+body {
+    background-color: black;
+    color: white;
+    font-family: KellySlab-Regular, 'KellySlab-Regular';
+
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+nav {
+
+    background-color: darkred;
+
+    }
+
+
+
+
+
+    .header {
+        background: url(/public/pictures/header.gif);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        background-color: hsl(220, 60%, 41%)
+    }
+  
+
+    .name_auth_user {
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        
+    }
+
+.navbar-brand {
+    font-weight: bolder;
+}
+.logo {
+    font-size: 30px; 
+}
+.logo:hover {
+    color: rgb(233, 130, 130);
+
+}
+
+
+
+.autorization {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.registration {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+.autorization:hover {
+    color: rgb(233, 130, 130);
+}
+.registration:hover {
+    color: rgb(233, 130, 130);
+}
+
+
+
+
+.header_autorization {
+    padding-left:250px;
+}
+
+
+
+.content {
+    height: 500px;
+}
+
+
+
+
+
+
+footer{
+    
+    background-color: darkred;
+   
+    color: white;
+    margin-top: auto;
+    height: 80px;
+}
+
+.footerHref {
+    padding-left: 400px;
+    padding-top: 30px;
+
+}
+
+A {
+    color: white;
+}
+
+/*
+default */
+
+
+
+
+
+
+
+/*
+main*/
+
+.mainArticle {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.mainParagraph {
+    text-align: center;
+}
+
+
+.mainLink {
+    color: red;
+ }
+
+.mainLink:hover {
+color: brown;
+}
+
+
+.mainAuth {
+   text-align: center;
+}
+
+
+/*
+main */
+
+
+
+
+/*
+comments*/
+.commentImg {
+  margin: auto;
+}
+
+#continue {
+    margin-top: 10px;
+}
+
+.output_comment {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.comment {
+    padding-top: 30px;
+}
+
+.commentImg {
+    margin: 0 auto;
+    width: 80em;
+}
+
+.img {
+    margin-left: 130px;
+}
+
+
+.userComment {
+    color: brown;
+}
+
+
+#sent_comment {
+    margin-top: 20px;
+}
+
+
+#buttonDelete {
+    margin-left: 1040px;
+    width: 100px;
+    font-size: 12px;
+}
+
+/*
+comments*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+account/registration*/
+
+.registrationForm{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/*
+account/registration*/
+
+
+
+
+
+
+/*
+account/login*/
+
+
+.loginUser {
+ 
+ 
+    margin: auto;
+}
+
+
+.loginExit:hover {
+    color: rgb(233, 130, 130);
+}
+
+
+
+#loginAlert {
+    background-color: rgb(44, 44, 44);
+    margin: 30px 10px 30px;
+    color: white;
+    text-align: center;
+    font-weight: 100px;
+}
+
+/*
+account/login*/
