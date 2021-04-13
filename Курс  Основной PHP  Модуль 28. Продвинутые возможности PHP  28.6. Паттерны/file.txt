@@ -1,0 +1,438 @@
+<html class="sb-init"><head>
+	<base href="/templates/modex/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <!-- CSS -->
+	<link href="assets/css/preload.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/vendors.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" type="text/css">
+	<link href="/lib/jQuery_ui/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style_color.css?v=11" rel="stylesheet" type="text/css" title="default">
+	<link href="assets/css/width-full.css" rel="stylesheet" type="text/css" title="default">
+	<link href="/templates/modex/css/catalogue/catalogue.css" rel="stylesheet" type="text/css">
+	<link href="/modules/slider/css/style.css" rel="stylesheet" type="text/css">	
+	<link href="css/astself.css" rel="stylesheet" type="text/css">
+	<!-- JS -->
+	<script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script src="assets/js/vendors.js"></script>
+<script src="/lib/jQuery_ui/jquery-ui.js"></script>
+	<title>Об оплате - AMotors.spb</title>
+	<link rel="stylesheet" href="/templates/modex/css/docpart/style.css" type="text/css">
+	<script src="/lib/jQuery_ui/jquery-ui.js"></script>
+	<link href="/lib/jQuery_ui/jquery-ui.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">	
+</head>
+<body><div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
+<!-- Preloader -->
+<div id="preloader" class="" style="display: none;">
+    <div id="status" style="display: none;">&nbsp;</div>
+</div>
+<div class="container">
+</div>
+<div class="header-top-line">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+								<div class="hidden">
+					<!-- Модуль географического узла -->
+					
+				</div>
+									<i style="font-size:13px;" class="fa fa-map-marker hidden" aria-hidden="true"></i>
+					<span>г. Санкт-Петербург, Шушары, ул. Школьная д.59В</span>
+							</div>
+			<div class="col-xs-6 text-right">
+				<span style="margin-right:5px;"><a href="tel:+79111123232"> +7 911 112 32 32</a></span>
+				<i style="margin:0px 15px;" class="fa fa-phone hidden-xs" aria-hidden="true"></i>
+				<span><a href="tel:8 800 505 65 50"> 8 800 505 65 50 <small>(звонок бесплатный)</small></a></span>
+				<i style="margin:0px 15px;" class="fa fa-exchange hidden-xs" aria-hidden="true"></i>
+				<span class="hidden-xs"><a href="mailto: AMotors.spb@bk.ru">AMotors.spb@bk.ru</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="header-box" class="">
+<header id="header-full-top" class="hidden-xs header-full">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="table-group">
+					<div class="table-control">
+						<a class="header-logo" href="https://motors.spb.ru/">
+							<img src="/content/files/images/logomotors.png?v=11" alt="">
+						</a>
+					</div>
+					<div class="table-control header-search-box">
+						<div class="dropdown">
+							<span class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+							<ul class="dropdown-menu dropdown-menu-left dropdown-login-box animated flipCenter">
+								<li><a href="javascript:void(0);" onclick="change_header_search_form(1);">Поиск по артикулу</a></li>
+								<li><a href="javascript:void(0);" onclick="change_header_search_form(2);">Поиск по наименованию</a></li>
+								<li><a href="javascript:void(0);" onclick="change_header_search_form(3);">Поиск по vin</a></li>
+							</ul>
+						</div>
+												<form action="/shop/part_search" method="GET" class="header_search_form_1 hidden">
+							<div class="input-group">
+								<input value="" type="text" class="form-control" placeholder="Поиск артикулу" name="article">
+								<span class="input-group-btn">
+									<button class="btn btn-ar btn-primary" type="submit">Поиск</button>
+								</span>
+							</div>
+						</form>
+						<form action="/shop/search" method="GET" class="header_search_form_2 hidden">
+							<div class="input-group">
+								<input value="" type="text" class="form-control" placeholder="По каталогу наличия" name="search_string">
+								<span class="input-group-btn">
+									<button class="btn btn-ar btn-primary" type="submit">Поиск</button>
+								</span>
+							</div>
+						</form>
+						<form action="/originalnye-katalogi/?VinAction=Search&amp;language=ru" data-link="/originalnye-katalogi/?vin=vinValue&amp;VinAction=Search&amp;language=ru" class="header_search_form_3 ">
+							<div class="input-group">
+								<input class="form-control" placeholder="Поиск vin" name="vin">
+								<span class="input-group-btn">
+									<button class="btn btn-ar btn-primary" type="submit">Поиск</button>
+								</span>
+							</div>
+						</form>
+					</div>
+					<div class="table-control header-user-box">
+						<div class="new-header-user-box">
+							<a href="/shop/cart" class="header-cart-box">
+								<span id="header_cart_items_count">0</span>
+								<span id="header_cart_items_sum">Пусто</span>
+								<i class="fa fa-shopping-cart"></i>
+							</a>
+						</div>
+						<div class="new-header-user-box dropdown">
+														<span class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								<span>Личный кабинет</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</span>
+							<div class="dropdown-menu dropdown-menu-right dropdown-login-box animated flipCenter">
+									<div class="panel-heading">Форма авторизации</div>
+	<div class="panel-body no-auth" style="color:#777;">
+		<form method="POST" name="auth_formheader_top_tab">
+			<input type="hidden" name="authentication" value="true">
+						<input type="hidden" name="target" value="">
+			<div class="form-group">
+				<div class="input-group login-input">					
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input style="height: 40px; background-color:#FFF; border: 1px solid #ccc; color: #555;" type="text" class="form-control" placeholder="E-mail" name="login">
+				</div>
+				<br>
+				<div class="input-group login-input">
+					<span class="input-group-addon"><i style="padding: 0px 2px 0px 3px;" class="fa fa-lock"></i></span>
+					<input style="height: 40px; background-color:#FFF; border: 1px solid #ccc; color: #555;" type="password" class="form-control" placeholder="Пароль" name="password" autocomplete="off">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox_remember_header_top_tab" name="rememberme">
+					<label for="checkbox_remember_header_top_tab">Запомнить меня</label>
+				</div>
+				<a href="javascript:void(0);" onclick="forms['auth_formheader_top_tab'].submit();" class="btn btn-ar btn-primary btn_auth" style="color:#FFF;">Войти</a>
+				<a href="/users/registration" class="btn btn-ar btn-success btn_reg" style="color:#FFF;">Регистрация</a>
+				<hr class="dotted margin-10">	
+				<a href="/users/forgot_password" class="btn btn-ar btn-warning btn_forget" style="color:#FFF;">Не помню пароль</a>
+				<div class="clearfix"></div>
+			</div>
+		</form>
+	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</header>
+<nav class="navbar navbar-default navbar-header-full  yamm navbar-static-top" role="navigation" id="header">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-bars"></i></button>
+			
+            <a id="ar-brand" class="logo_min hidden-lg hidden-md hidden-sm" href="https://motors.spb.ru/">
+				<img src="/content/files/images/logomotors.png?v=11" alt="">
+			</a>
+			
+			<button type="button" class="navbar-toggle header_fa_user_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"><i class="fa fa-user"></i></button>
+        </div> <!-- navbar-header -->
+		
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+	<ul class="nav navbar-nav nav_cat">
+		<li>
+			<a href="javascript:void(0);" class="dropdown-cat-btn dropdown-toggle" data-toggle="dropdown">Каталог<span class="hidden-sm"> товаров</span></a>
+			<ul class="dropdown-menu keep_open dropdown-menu-left fadeIn">
+			<li class="dropdown-submenu"><a class="has_children" href="/zapchasti-v-nalichii">Запчасти в наличии</a><ul class="dropdown-menu"><li><a href="/zapchasti-v-nalichii/detali-dly-to">Детали для ТО</a></li><li><a href="/zapchasti-v-nalichii/dvigatel">Двигатель</a></li><li><a href="/zapchasti-v-nalichii/xodovaya-chast">Ходовая часть</a></li><li><a href="/zapchasti-v-nalichii/toplivnaya-systema">Топливная система</a></li><li><a href="/zapchasti-v-nalichii/transmission">Трансмиссия</a></li><li><a href="/zapchasti-v-nalichii/detali-kuzova">Детали кузова</a></li><li><a href="/zapchasti-v-nalichii/detali-salona">Детали салона</a></li><li><a href="/zapchasti-v-nalichii/otoplenie--kondicionirovanie">Отопление / кондиционирование</a></li><li><a href="/zapchasti-v-nalichii/systema-ohlazdenia">Система охлаждения</a></li><li><a href="/zapchasti-v-nalichii/sistema-vypuska">Система выпуска</a></li><li><a href="/zapchasti-v-nalichii/elektrooborudovanie">Электрооборудование</a></li><li><a href="/zapchasti-v-nalichii/tormoznaya-sistema">Тормозная система</a></li><li><a href="/zapchasti-v-nalichii/rulevoe-upravlenie">Рулевое управление</a></li><li><a href="/zapchasti-v-nalichii/dopolnitelnoe-oborudovanie">Дополнительное оборудование</a></li></ul></li>
+			</ul>
+		</li>
+	</ul>            <ul class="nav navbar-nav"><li class="dropdown"><a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false" class="hidden-sm dropdown-toggle">Каталог запчастей</a><ul class=" dropdown-menu animated-2x animated fadeIn"><li><a href="/shop/katalog-tovarov">По видам запчастей</a></li><li><a href="/originalnye-katalogi">По маркам и моделям авто</a></li></ul></li><li class="dropdown"><a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false" class=" dropdown-toggle">Автотовары</a><ul class=" dropdown-menu animated-2x animated fadeIn"><li><a href="/shop/katalogi-ucats/shiny">Шины</a></li><li><a href="/shop/katalogi-ucats/avtoximiya">Масла и автохимия</a></li><li><a href="/shop/katalogi-ucats/akkumulyatory">Аккумуляторы</a></li><li><a href="/shop/katalogi-ucats/kolesnye-gajki-bolty-prostavki">Болты, гайки</a></li></ul></li><li class="dropdown"><a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false" class=" dropdown-toggle">Автосервис</a><ul class=" dropdown-menu animated-2x animated fadeIn"><li><a href="/diagnostika-avtomobilya">Диагностика</a></li><li><a href="/tex-osmotr-mashiny">ТО Автомобиля</a></li><li><a href="/remont-avtoelektriki">Ремонт автоэлектрики</a></li><li><a href="/remont-podveski-avto">Ремонт подвески</a></li><li><a href="/kuzovnye-i-malyarnye-raboty">Кузовные и малярные работы</a></li><li><a href="/remont-avtomobilnogo-dvigatelya">Ремонт двигателя</a></li><li><a href="/remont-tormozoj-sistemy">Ремонт тормозной системы</a></li><li><a href="/remont-sistemy-oxlazhdeniya">Ремонт системы охлаждения</a></li><li><a href="/remont-kondicionera">Ремонт кондиционера</a></li><li><a href="/remont-transmissii-avtomobilya">Ремонт трансмиссии</a></li><li><a href="/remont-hodovoj">Ремонт ходовой</a></li><li><a href="/shinomontazh-v-shusharax">Шиномонтаж</a></li><li><a href="/avtoservis/zapis-na-sto">Запись на СТО</a></li><li><a href="/raschet-stoimosti-rabot">Расчет стоимости работ</a></li></ul></li><li class="dropdown"><a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false" class=" dropdown-toggle">Информация</a><ul class=" dropdown-menu animated-2x animated fadeIn"><li class="active"><a href="/ob-oplate">Об оплате</a></li><li><a href="/o-dostavke">О доставке</a></li><li><a href="/vozvrat-i-garantiya">О возврате</a></li></ul></li><li><a href="/kontakty">Контакты</a></li><li><a href="/novosti" class="red">Акции</a></li></ul>        </div><!-- navbar-collapse -->
+		<button class="no_header_fa_user_btn" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"><i class="fa fa-user"></i></button>
+		<div class="row">
+			<div class="collapse " id="bs-example-navbar-collapse-2">
+			<div class="header-user-box">
+			<div class="new-header-user-box">
+				<div class="panel-heading">Форма авторизации</div>
+	<div class="panel-body no-auth" style="color:#777;">
+		<form method="POST" name="auth_formheader_top_tab_mob">
+			<input type="hidden" name="authentication" value="true">
+						<input type="hidden" name="target" value="">
+			<div class="form-group">
+				<div class="input-group login-input">
+									
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input style="height: 40px; background-color:#FFF; border: 1px solid #ccc; color: #555;" type="text" class="form-control" placeholder="E-mail" name="login">
+				</div>
+				<br>
+				<div class="input-group login-input">
+					<span class="input-group-addon"><i style="padding: 0px 2px 0px 3px;" class="fa fa-lock"></i></span>
+					<input style="height: 40px; background-color:#FFF; border: 1px solid #ccc; color: #555;" type="password" class="form-control" placeholder="Пароль" name="password" autocomplete="off">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox_remember_header_top_tab_mob" name="rememberme">
+					<label for="checkbox_remember_header_top_tab_mob">Запомнить меня</label>
+				</div>
+				<a href="javascript:void(0);" onclick="forms['auth_formheader_top_tab_mob'].submit();" class="btn btn-ar btn-primary btn_auth" style="color:#FFF;">Войти</a>
+
+				<a href="/users/registration" class="btn btn-ar btn-success btn_reg" style="color:#FFF;">Регистрация</a>
+				
+				<hr class="dotted margin-10">
+				
+				<a href="/users/forgot_password" class="btn btn-ar btn-warning btn_forget" style="color:#FFF;">Не помню пароль</a>
+				<div class="clearfix"></div>
+			</div>
+		</form>
+	</div>
+			</div>
+			</div>
+			</div>
+        </div><!-- navbar-collapse -->
+		
+    </div><!-- container -->
+</nav>
+</div>
+<!-- search box for mobile -->
+<div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin-top: 20px;">
+	<div class="header-search-box">
+		<div class="dropdown">
+			<span class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+			<ul class="dropdown-menu dropdown-menu-left dropdown-login-box animated flipCenter">
+				<li><a href="javascript:void(0);" onclick="change_header_search_form(1);">Поиск по артикулу</a></li>
+				<li><a href="javascript:void(0);" onclick="change_header_search_form(2);">Поиск по наименованию</a></li>
+			</ul>
+		</div>
+		<form action="/shop/part_search" method="GET" class="header_search_form_1 hidden">
+			<div class="input-group">
+				<input value="" type="text" class="form-control" placeholder="Поиск по артикулу" name="article">
+				<span class="input-group-btn">
+					<button class="btn btn-ar btn-primary" type="submit">Поиск</button>
+				</span>
+			</div>
+		</form>
+		<form action="/shop/search" method="GET" class="header_search_form_2 hidden">
+			<div class="input-group">
+				<input value="" type="text" class="form-control" placeholder="По каталогу наличия" name="search_string">
+				<span class="input-group-btn">
+					<button class="btn btn-ar btn-primary" type="submit">Поиск</button>
+				</span>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="sb-site" style="margin-top: 0px;">
+<div class="boxed">
+<header class="main-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1 class="page-title">Об оплате</h1>
+			</div>
+			<div class="col-sm-6">
+					<ol class="breadcrumb">
+	<li><a href="https://motors.spb.ru/">Главная</a></li><li class="active">Об оплате</li>	</ol>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container">
+    <div class="row">
+		<div class="hidden-xs hidden-sm hidden-md hidden-lg">
+			<div class="row" style="margin: 0px 0px 15px 0px;">
+			<div class="col-xs-12">
+				<a onclick="show_hide_left_coll();" style="text-decoration: none; background-color: #f9f9f9; border: 1px solid #ddd; color: #222; position: relative; padding: 5px 10px;"><i class="fa fa-filter" aria-hidden="true"></i> <span>Отобразить фильтры</span></a>
+			</div>
+			</div>
+		</div>	
+		<div class="hidden-xs hidden-sm hidden-md hidden-lg" id="left_col">
+<div id="cssmenu">
+		<ul id="ul_1" class="sidebar-nav animated fadeIn">
+					<li class=" has-sub last"><a data-toggle="collapse" class="" aria-expanded="false" href="#ul_2"><span>Запчасти в наличии</span></a>
+					<ul id="ul_2" class="menu-submenu list-unstyled collapse">
+					<li class=""><a href="/zapchasti-v-nalichii/detali-dly-to"><span>Детали для ТО</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/dvigatel"><span>Двигатель</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/xodovaya-chast"><span>Ходовая часть</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/toplivnaya-systema"><span>Топливная система</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/transmission"><span>Трансмиссия</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/detali-kuzova"><span>Детали кузова</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/detali-salona"><span>Детали салона</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/otoplenie--kondicionirovanie"><span>Отопление / кондиционирование</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/systema-ohlazdenia"><span>Система охлаждения</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/sistema-vypuska"><span>Система выпуска</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/elektrooborudovanie"><span>Электрооборудование</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/tormoznaya-sistema"><span>Тормозная система</span></a>
+			        </li>
+        			<li class=""><a href="/zapchasti-v-nalichii/rulevoe-upravlenie"><span>Рулевое управление</span></a>
+			        </li>
+        			<li class=" last"><a href="/zapchasti-v-nalichii/dopolnitelnoe-oborudovanie"><span>Дополнительное оборудование</span></a>
+			        </li>
+            </ul>
+            </li>
+            </ul>
+    </div>
+		</div>
+		<div class="col-md-12" id="right_col">
+            <div class="row fail" id="Container">
+				<div class="col-lg-12"></div>				<div class="row" style="margin:0;">
+				<div class="col-lg-12">	
+				<div class="col-xs-12">
+<h3 id="pravila_oplati_i_bezopasnost_platezhey_konfidentsialnost_informatsii" class="heading heading_size_m">Правила оплаты и безопасность платежей, конфиденциальность информации</h3>
+<p class="paragraph">Оплата банковскими картами осуществляется через АО «АЛЬФА-БАНК».</p>
+<p class="paragraph"><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/AlfaBank.png"></p>
+<p class="paragraph">К оплате принимаются карты VISA, MasterCard, МИР.</p>
+<table><colgroup width="33.333%"></colgroup>
+<tbody>
+<tr>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/_Visa.png"></td>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/Mastercard-logo.svg-8.png"></td>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/logo_mir-50.png"></td>
+</tr>
+</tbody>
+</table>
+<p class="paragraph">Услуга оплаты через интернет осуществляется в соответствии с Правилами международных платежных систем Visa, MasterCard и Платежной системы МИР на принципах соблюдения конфиденциальности и безопасности совершения платежа, для чего используются самые современные методы проверки, шифрования и передачи данных по закрытым каналам связи. Ввод данных банковской карты осуществляется на защищенной платежной странице АО «АЛЬФА-БАНК».</p>
+<p class="paragraph">На странице для ввода данных банковской карты потребуется ввести&nbsp;<strong>данные банковской карты</strong>: номер карты, имя владельца карты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA, CVC2 для MasterCard, Код Дополнительной Идентификации для МИР). Все необходимые данные пропечатаны на самой карте. Трёхзначный код безопасности — это три цифры, находящиеся на обратной стороне карты.</p>
+<p class="paragraph">Далее вы будете перенаправлены на страницу Вашего банка для ввода кода безопасности, который придет к Вам в СМС. Если код безопасности к Вам не пришел, то следует обратиться в банк выдавший Вам карту.</p>
+<table><colgroup width="33.333%"></colgroup>
+<tbody>
+<tr>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/_verified-by-visa-40.png"></td>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/_mastercard-securecode-50.png"></td>
+<td><img title="" src="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/static/images/MIRaccept-40.png"></td>
+</tr>
+</tbody>
+</table>
+<p class="paragraph">Случаи отказа в совершении платежа:</p>
+<ul class="list">
+<li class="list__item">банковская карта не предназначена для совершения платежей через интернет, о чем можно узнать, обратившись в Ваш Банк;</li>
+<li class="list__item">недостаточно средств для оплаты на банковской карте. Подробнее о наличии средств на банковской карте Вы можете узнать, обратившись в банк, выпустивший банковскую карту;</li>
+<li class="list__item">данные банковской карты введены неверно;</li>
+<li class="list__item">истек срок действия банковской карты. Срок действия карты, как правило, указан на лицевой стороне карты (это месяц и год, до которого действительна карта). Подробнее о сроке действия карты Вы можете узнать, обратившись в банк, выпустивший банковскую карту;</li>
+</ul>
+<p class="paragraph">По вопросам оплаты с помощью банковской карты и иным вопросам, связанным с работой сайта, Вы можете обращаться по следующим телефонам:&nbsp;<a href="tel:8 800 505 65 50">8 800 505 65 50</a>.</p>
+<p class="paragraph">Предоставляемая вами персональная информация (имя, адрес, телефон, e-mail, номер банковской карты) является конфиденциальной и не подлежит разглашению. Данные вашей кредитной карты передаются только в зашифрованном виде и не сохраняются на нашем Web-сервере.</p>
+</div>
+				</div>
+				</div>
+				<div class="col-lg-12"></div>			</div>
+		</div>
+	</div>
+</div>
+<aside id="footer-widgets">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-7">
+               
+				<div class="row">
+					<div class="col-sm-4">
+						<h3 class="module_caption">Покупателям</h3><ul class="list-unstyled"><li><a href="/kak-zakazat">Как заказать</a></li><li class="active"><a href="/ob-oplate">Об оплате</a></li><li><a href="/o-dostavke">О доставке</a></li><li><a href="/o-vozvrate">О возврате</a></li></ul>					</div>
+					<div class="col-sm-4">
+						<h3 class="module_caption">Информация</h3><ul class="list-unstyled"><li><a href="/o-kompanii">О компании</a></li><li><a href="/novosti">Новости</a></li><li><a href="/polzovatelskoe-soglashenie">Соглашение</a></li><li><a href="/kontakty">Контакты</a></li></ul>					</div>
+					<div class="col-sm-4">
+						<h3 class="module_caption">Интернет магазин</h3><ul class="list-unstyled"><li><a href="/shop/orders">Заказы</a></li><li><a href="/shop/cart">Корзина</a></li><li><a href="/shop/balans">Баланс</a></li><li><a href="/shop/katalog-tovarov">Каталог товаров</a></li></ul>					</div>
+				</div>		
+				<h3 class="footer-widget-title">Отправить запрос</h3>
+                <p>Если Вы не нашли нужные запчасти, или Вам требуется помощь в подборе,<br>отправьте нам запрос - мы Вам поможем</p>
+				<div class="input-group">
+					<a class="btn btn-block btn-ar btn-primary" href="/zapros-prodavczu">Отправить запрос продавцу</a>
+                </div>			
+            </div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<div class="row">					
+					<div class="col-sm-6 col-md-12">
+						<h3 class="footer-widget-title">Контакты</h3>
+						<div>г. Санкт-Петербург, Шушары, ул. Школьная д.59В</div>
+						<div><a href="tel:8 800 505 65 50">8 800 505 65 50</a></div>
+						<div><a href="tel:+79111123232">+7 911 112 32 32</a></div>
+						<div><a href="mailto: AMotors.spb@bk.ru">AMotors.spb@bk.ru</a></div>
+					</div>
+					<div class="col-sm-6 col-md-12">
+						<h3 class="footer-widget-title">Режим работы</h3>
+						<div>пн-вс с 10:00 до 21:00</div>
+					</div>				
+												<div class="col-xs-12">
+								<h3 class="footer-widget-title">Принимаем к оплате</h3>
+								<div style="line-height:1em;">
+																		<div class="footer_pay_box">
+										<div class="footer_pay_logo" style="background:url('/content/files/images/icons/pay/visa.png') no-repeat; background-size:contain; background-position:center;"></div>
+									</div>
+																		<div class="footer_pay_box">
+										<div class="footer_pay_logo" style="background:url('/content/files/images/icons/pay/mastercard.png') no-repeat; background-size:contain; background-position:center;"></div>
+									</div>
+																		<div class="footer_pay_box">
+										<div class="footer_pay_logo" style="background:url('/content/files/images/icons/pay/mir.png') no-repeat; background-size:contain; background-position:center;"></div>
+									</div>
+																		<div class="footer_pay_box">
+										<div class="footer_pay_logo" style="background:url('/content/files/images/icons/pay/alfa.png') no-repeat; background-size:contain; background-position:center;"></div>
+									</div>
+																	</div>
+							</div>									
+				</div>
+            </div>
+			
+        </div> <!-- row -->
+    </div> <!-- container -->
+</aside> <!-- footer-widgets -->
+<footer id="footer" style="position: relative;">
+	<p>© 2021 motors.spb.ru</p>
+	<!--<div style="text-align: left; position: absolute; left: 6px; top: 2px;">
+		<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+		<script src="https://yastatic.net/share2/share.js"></script>
+		<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter,viber,whatsapp" data-limit="0"></div>
+		<a class="hidden-xs" title="Сайт работает на платформе Docpart" target="_blank" href="https://docpart.ru/">
+			<img style="background-color: #fff; border-radius: 2px; padding: 0px; position: absolute; top: 5px; left: 40px; height: 35px; border: 1px solid #ccc;" src="https://docpart.ru/content/files/images/Logo_footer_transparent.png" border="0"/>
+		</a>
+	</div>-->
+</footer>
+</div> <!-- boxed -->
+</div> <!-- sb-site -->
+
+<div class="bottom-border">
+</div>
+<div id="back-top" style="display: none;">
+    <a href="#header"><i class="fa fa-chevron-up"></i></a>
+</div>
+<script src="assets/js/styleswitcher.js"></script>
+<script src="assets/js/syntaxhighlighter/shCore.js"></script>
+<script src="assets/js/syntaxhighlighter/shBrushXml.js"></script>
+<script src="assets/js/syntaxhighlighter/shBrushJScript.js"></script>
+<script src="assets/js/DropdownHover.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/commerce.js"></script>
+<script src="assets/js/e-commerce_product.js"></script>
+<body></html>
