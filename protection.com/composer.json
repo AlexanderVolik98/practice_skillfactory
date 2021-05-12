@@ -1,0 +1,19 @@
+{
+    "name": "a/a",
+    "description": "a",
+    "authors": [
+        {
+            "name": "volik alexander",
+            "email": "eelsay1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "2.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "App"
+        }
+    }
+}
